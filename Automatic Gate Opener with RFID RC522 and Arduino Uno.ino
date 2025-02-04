@@ -21,10 +21,6 @@ void setup() {
     Serial.println("RTC Tidak Ditemukan!");
     while (1);
   }
-
-  // Hanya set tanggal & waktu jika perlu, hapus setelahnya
-  // rtc.adjust(DateTime(2021, 6, 17, 22, 0, 0));
-
   servoku.attach(9);
   pinMode(3, OUTPUT); 
 
